@@ -14,6 +14,6 @@ variable "org" {
 }
 
 variable "reservation_number" {
-  type = number
+  type    = number
   default = 1
 }
