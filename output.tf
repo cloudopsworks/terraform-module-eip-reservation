@@ -4,6 +4,6 @@
 #            Distributed Under Apache v2.0 License
 #
 
-output "ip_addresses" {
+output "public_ips" {
   value = aws_eip.eip_reservation.*.public_ip
 }
