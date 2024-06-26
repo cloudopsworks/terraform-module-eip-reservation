@@ -7,3 +7,7 @@
 output "public_ips" {
   value = aws_eip.eip_reservation.*.public_ip
 }
+
+output "public_ip_ids" {
+  value = aws_eip.eip_reservation.*.id
+}
