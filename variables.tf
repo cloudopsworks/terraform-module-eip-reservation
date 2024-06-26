@@ -17,3 +17,8 @@ variable "reservation_number" {
   type    = number
   default = 1
 }
+
+variable "extra_tags" {
+  type    = map(string)
+  default = {}
+}

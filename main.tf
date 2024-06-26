@@ -10,5 +10,5 @@ resource "aws_eip" "eip_reservation" {
 
   tags = merge({
     Name = "eip-reservation-${lower(var.org.organization_unit)}-${lower(var.org.environment_name)}-${lower(var.org.environment_type)}-${count.index}"
-  }, module.tags.locals.common_tags)
+  }, local.all_tags)
 }
