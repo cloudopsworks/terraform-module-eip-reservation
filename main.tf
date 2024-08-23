@@ -9,6 +9,6 @@ resource "aws_eip" "eip_reservation" {
   domain = "vpc"
 
   tags = merge({
-    Name = "eip-reservation-${lower(var.org.organization_unit)}-${lower(var.org.environment_name)}-${lower(var.org.environment_type)}-${count.index}"
+    Name = "eip-${lower(var.org.organization_unit)}-${lower(var.org.environment_name)}-${lower(var.org.environment_type)}-${count.index}-reservation"
   }, local.all_tags)
 }
